@@ -24,7 +24,7 @@ export const hero = {
   portrait: "/photos/portrait.jpg",
   background: "/photos/mountain.jpg", // ảnh nền phần đầu và cuối trang
   portraitCaption: "Class of 2026",
-  tagline:"Been a long journey, I've learned a lot",
+  tagline:"Hành trình vạn dặm, từ bước khởi đầu.",
   marquee: ["Class of 2026", "Redbull", "Deadline", "Laptop", "PRX", "MCK"],
 };
 
@@ -37,23 +37,27 @@ const captions: Record<string, string> = {
   "a4.jpg": "Đi học ké mấy ae GD",
   "a5.jpg": "Môn code tay",
   "a6.jpg": "IOT stuff",
-  "a7.jpg": "Toán silver flag",
+  "a7.jpg": "Mùa thi discord",
+  "a13.jpg": "EXE201",
   "a8.jpg": "1 trong nhiều đêm đi net \"học bài\"",
   "a9.jpg": "Thể thao tôi iêu",
-  "a10.jpg": "Như ảnh",
+  "a10.jpg": ";-;",
   "a11.jpg": "Peak Triết Học",
-  "a12.jpg": "Mùa thi discord",
-  "a13.jpg": "EXE201",
-  "a14.jpg": "Không thể đạt được nếu thiếu E =]",
-  "a15.jpg": "Lịch học",
+  
+  
+  "a14.jpg": "Lai rai cầu lông",
+  "a15.jpg": "Lai rai bóng rổ",
   "a16.jpg": "Random api",
   "a17.jpg": "Mẹp",
   "a18.jpg": "Long Đô La",
-  "a19.jpg": "Capsule ",
-  "a20.jpg": "Vovinam =))",
+  "a19.jpg": "Ăn và ăn",
+  "a20.jpg": "Thảo cầm viên Vlog",
   "a21.jpg": "Bon chang linh ngu lam",
   "a22.jpg": "Photobooth sự kiện Triết học",
   "a23.jpg": "Tam thái tử",
+  "a25.jpg": "Đồ án tốt nghiệp",
+  "a26.jpg": "Hồi quân sự làm tên lửa nước",
+
   "a24.jpg": "The End!",
 };
 
@@ -72,15 +76,15 @@ export const moments = {
   // các bài báo xen giữa ảnh; bài đầu là tin trang nhất
   stories: [
     { headline: "Tân sinh viên năm nào nay đã tốt nghiệp", text: "Từ những chuyến đi, những môn học, cậu đã gặp được rất nhiều bạn bè, những người đã cùng cậu trải qua những kỷ niệm đáng nhớ." },
-    { headline: "Deadline: kẻ thù chung", text: "Nguồn tin giấu tên cho biết phần lớn bài tập được nộp lúc 23:59." },
+    { headline: "Deadline: ", text: "Phần lớn được nộp lúc 23:59." },
     { headline: "Tiệm net vẫn là phòng học hiệu quả nhất", text: "White noise tự nhiên, học mệt có thể nghỉ ngay." },
-    { headline: "Bạn bè là tài sản lớn nhất", text: "Thứ đáng giá nhất mang về sau bốn năm không nằm trong bảng điểm." },
-    { headline: "Ngủ đủ 8 tiếng vẫn là truyền thuyết", text: "Giới chuyên gia chưa tìm được sinh viên nào làm được điều này." },
+    { headline: "Bạn bè:", text: "Mấy anh em hôm mi của tôi" },
+    { headline: "Ngủ đủ 8 tiếng vẫn là truyền thuyết", text: "Mình ngủ 15" },
   ],
 };
 
 export const invitation = {
   title: "Trân trọng kính mời",
-  text: "Sự có mặt của bạn là món quà ý nghĩa nhất trong ngày quan trọng này.",
-  cover: "./photos/invitation2.jpg",
+  text: "Sự có mặt của mọi người là món quà ý nghĩa nhất trong ngày quan trọng này.",
+  cover: "./photos/invitation3.jpg",
 };
