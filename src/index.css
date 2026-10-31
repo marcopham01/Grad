@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Component Aceternity dùng dark:; bật bằng class "dark" trên <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  /* xanh lá dịu lấy từ ảnh núi */
+  --color-sage-50: #f4f7f1;
+  --color-sage-100: #e6eedf;
+  --color-sage-200: #cfdcc3;
+  --color-sage-300: #b0c6a0;
+  --color-sage-400: #8eab7c;
+  --color-sage-500: #6f8f5f;
+  --color-sage-600: #58744b;
+  --color-sage-700: #475d3d;
+  --color-sage-800: #3a4b33;
+  --color-sage-900: #303e2b;
+  --color-sage-950: #192116;
+}
+
+html {
+  background: var(--color-sage-50);
+}
+
+/* Collage: bóng đổ bám theo mép giấy xé (clip-path ở lớp con) */
+.collage {
+  filter: drop-shadow(0 6px 10px rgb(25 33 22 / 0.25));
+}
+.collage img {
+  filter: contrast(1.08) saturate(1.15) sepia(0.08);
+}
+.tape {
+  position: absolute;
+  top: calc(clamp(0.6rem, 2vw, 1.5rem) / -2);
+  left: 50%;
+  width: 38%;
+  height: clamp(0.6rem, 2vw, 1.5rem);
+  translate: -50% 0;
+  background: rgb(255 236 150 / 0.8);
+  clip-path: polygon(2% 0, 98% 6%, 100% 50%, 97% 100%, 3% 94%, 0 50%);
+}
+/* Vân giấy phủ lên trên */
+.paper-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.18;
+  mix-blend-mode: multiply;
+}
+
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee { animation: none; }
+}
