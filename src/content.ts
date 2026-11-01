@@ -57,6 +57,7 @@ const captions: Record<string, string> = {
   "a23.jpg": "Tam thái tử",
   "a25.jpg": "Đồ án tốt nghiệp",
   "a26.jpg": "Hồi quân sự làm tên lửa nước",
+  "a27.jpg": "Sinh nhật với mấy ae",
 
   "a24.jpg": "The End!",
 };
