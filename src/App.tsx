@@ -141,6 +141,7 @@ function Invitation() {
             <Info label="Ngày" value={info.dateText} />
             <Info label="Giờ" value={info.timeText} />
             <Info label="Địa điểm" value={`${info.venue}, ${info.address}`} />
+            <Info label="Tới nơi gọi tui nhe" value={info.contact} />
           </dl>
           <div className="flex flex-wrap gap-3">
             <a href={calendarUrl()} target="_blank" rel="noreferrer" className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-sage-900 hover:bg-sage-100">
